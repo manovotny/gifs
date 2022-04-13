@@ -7,7 +7,7 @@ import {findAll, findData} from '../../utils/sample-api';
 import ListDetail from '../../components/ListDetail';
 
 type Params = {
-    id?: string;
+    id: string;
 };
 
 type Props = {
@@ -47,7 +47,7 @@ const getStaticProps: GetStaticProps = ({params}) => {
     const {id} = params as Params;
 
     try {
-        const item = findData(Array.isArray(id) ? id[0] : id);
+        const item = findData(id);
 
         return {
             props: {
@@ -57,7 +57,7 @@ const getStaticProps: GetStaticProps = ({params}) => {
     } catch (error) {
         return {
             props: {
-                errors: error.message,
+                errors: error.message as string,
             },
         };
     }

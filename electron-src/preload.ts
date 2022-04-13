@@ -3,7 +3,8 @@ import {ipcRenderer} from 'electron';
 import process from 'process';
 
 declare global {
-    let ipcRenderer: IpcRenderer;
+    // eslint-disable-next-line no-inner-declarations,no-var,vars-on-top
+    var ipcRenderer: IpcRenderer;
 }
 
 // Since we disabled nodeIntegration we can reintroduce

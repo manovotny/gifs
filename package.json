@@ -14,8 +14,8 @@
         "pack-app": "npm run build && electron-builder --dir",
         "prettier": "prettier --write --ignore-unknown .",
         "prettier:check": "prettier --check --ignore-unknown .",
-        "test": "npm run lint && npm run prettier:check",
-        "type-check": "tsc"
+        "test": "npm run lint && npm run type-check && npm run prettier:check",
+        "type-check": "tsc -p ./renderer/tsconfig.json && tsc -p ./electron-src/tsconfig.json"
     },
     "git": {
         "pre-commit": "lint-staged"

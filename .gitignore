@@ -1,4 +1,5 @@
 *.log
+*.tsbuildinfo
 .DS_Store
 main
 node_modules
