@@ -1,4 +1,5 @@
 import React from 'react';
+import type {ReactElement} from 'react';
 
 import type {User} from '../interfaces';
 
@@ -8,7 +9,7 @@ type Props = {
     items: User[];
 };
 
-const List = ({items}: Props) => (
+const List = ({items}: Props): ReactElement => (
     <ul>
         {items.map((item) => (
             <li key={item.id}>

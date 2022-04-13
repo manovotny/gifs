@@ -1,8 +1,9 @@
 import type {IpcRenderer} from 'electron';
 import {ipcRenderer} from 'electron';
+import process from 'process';
 
 declare global {
-    var ipcRenderer: IpcRenderer;
+    let ipcRenderer: IpcRenderer;
 }
 
 // Since we disabled nodeIntegration we can reintroduce

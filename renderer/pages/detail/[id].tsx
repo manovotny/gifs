@@ -1,4 +1,4 @@
-// import { NextPageContext } from 'next'
+import type {ReactElement} from 'react';
 import type {GetStaticPaths, GetStaticProps} from 'next';
 
 import Layout from '../../components/Layout';
@@ -15,7 +15,7 @@ type Props = {
     errors?: string;
 };
 
-const InitialPropsDetail = ({item, errors}: Props) => {
+const InitialPropsDetail = ({item, errors}: Props): ReactElement => {
     if (errors) {
         return (
             <Layout title="Error | Next.js + TypeScript + Electron Example">
@@ -33,18 +33,21 @@ const InitialPropsDetail = ({item, errors}: Props) => {
     );
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
-    const items: User[] = await findAll();
+const getStaticPaths: GetStaticPaths = () => {
+    const items: User[] = findAll();
     const paths = items.map((item) => `/detail/${item.id}`);
 
-    return {paths, fallback: false};
+    return {
+        fallback: false,
+        paths,
+    };
 };
 
-export const getStaticProps: GetStaticProps = async ({params}) => {
+const getStaticProps: GetStaticProps = ({params}) => {
     const {id} = params as Params;
 
     try {
-        const item = await findData(Array.isArray(id) ? id[0] : id);
+        const item = findData(Array.isArray(id) ? id[0] : id);
 
         return {
             props: {
@@ -61,3 +64,4 @@ export const getStaticProps: GetStaticProps = async ({params}) => {
 };
 
 export default InitialPropsDetail;
+export {getStaticPaths, getStaticProps};

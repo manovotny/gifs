@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import type {ReactElement, ReactNode} from 'react';
 import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
@@ -8,7 +8,7 @@ type Props = {
     title?: string;
 };
 
-const Layout = ({children, title = 'This is the default title'}: Props) => (
+const Layout = ({children, title = 'This is the default title'}: Props): ReactElement => (
     <div>
         <Head>
             <title>{title}</title>

@@ -1,5 +1,7 @@
 import Link from 'next/link';
+import type {GetStaticProps} from 'next';
 import {useRouter} from 'next/router';
+import type {ReactElement} from 'react';
 
 import Layout from '../components/Layout';
 import List from '../components/List';
@@ -8,10 +10,9 @@ import {findAll} from '../utils/sample-api';
 
 type Props = {
     items: User[];
-    pathname: string;
 };
 
-const WithInitialProps = ({items}: Props) => {
+const WithInitialProps = ({items}: Props): ReactElement => {
     const router = useRouter();
 
     return (
@@ -28,10 +29,11 @@ const WithInitialProps = ({items}: Props) => {
     );
 };
 
-export async function getStaticProps() {
-    const items: User[] = await findAll();
+const getStaticProps: GetStaticProps<Props> = () => {
+    const items: User[] = findAll();
 
     return {props: {items}};
-}
+};
 
 export default WithInitialProps;
+export {getStaticProps};

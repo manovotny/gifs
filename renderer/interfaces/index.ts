@@ -9,9 +9,9 @@ import type {IpcRenderer} from 'electron';
 declare global {
     // eslint-disable-next-line @typescript-eslint/no-namespace
     namespace NodeJS {
-        interface Global {
+        type Global = {
             ipcRenderer: IpcRenderer;
-        }
+        };
     }
 }
 
