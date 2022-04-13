@@ -9,11 +9,12 @@
         "check": "npm-check -u",
         "dev": "npm run build-electron && electron .",
         "dist": "npm run build && electron-builder",
+        "lint": "eslint . --ext .js,.json,.ts,.tsx",
         "lint-staged": "lint-staged",
         "pack-app": "npm run build && electron-builder --dir",
         "prettier": "prettier --write --ignore-unknown .",
         "prettier:check": "prettier --check --ignore-unknown .",
-        "test": "npm run lint && npm run prettier:check && npm run coverage",
+        "test": "npm run lint && npm run prettier:check",
         "type-check": "tsc"
     },
     "git": {
@@ -35,6 +36,8 @@
         "@vercel/git-hooks": "1.0.0",
         "electron": "18.0.3",
         "electron-builder": "22.14.13",
+        "eslint": "8.7.0",
+        "eslint-config-get-off-my-lawn": "7.0.4",
         "lint-staged": "12.3.7",
         "next": "12.1.4",
         "npm-check": "5.9.2",

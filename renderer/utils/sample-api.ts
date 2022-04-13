@@ -1,4 +1,4 @@
-import {User} from '../interfaces';
+import type {User} from '../interfaces';
 
 /** Dummy user data. */
 export const dataArray: User[] = [
@@ -27,7 +27,7 @@ export async function findData(id: number | string) {
 export async function findAll() {
     // Throw an error, just for example.
     if (!Array.isArray(dataArray)) {
-        throw new Error('Cannot find users');
+        throw new TypeError('Cannot find users');
     }
 
     return dataArray;
