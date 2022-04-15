@@ -1,6 +1,7 @@
 *.log
-*.tsbuildinfo
 .DS_Store
+dist
 main
 node_modules
 renderer/.next
+renderer/out

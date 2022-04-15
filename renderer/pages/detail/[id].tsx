@@ -57,7 +57,7 @@ const getStaticProps: GetStaticProps = ({params}) => {
     } catch (error) {
         return {
             props: {
-                errors: error.message as string,
+                errors: error instanceof Error ? error.message : '`getStaticProps` error',
             },
         };
     }

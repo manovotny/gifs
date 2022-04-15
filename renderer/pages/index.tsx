@@ -1,8 +1,15 @@
+import type {IpcRenderer} from 'electron';
+
 import type {ReactElement} from 'react';
 import {useEffect} from 'react';
 import Link from 'next/link';
 
 import Layout from '../components/Layout';
+
+declare global {
+    // eslint-disable-next-line no-inner-declarations,no-var,vars-on-top
+    var ipcRenderer: IpcRenderer;
+}
 
 const onSayHiClick = (): void => {
     global.ipcRenderer.send('message', 'hi from next');

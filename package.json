@@ -1,10 +1,12 @@
 {
+    "name": "todo",
+    "version": "0.0.0",
     "private": true,
     "main": "main/index.js",
     "productName": "ElectronTypescriptNext",
     "scripts": {
         "build": "npm run build-renderer && npm run build-electron",
-        "build-electron": "tsc -p electron-src",
+        "build-electron": "tsc -p electron",
         "build-renderer": "next build renderer && next export renderer",
         "check": "npm-check -u",
         "dev": "npm run build-electron && electron .",
@@ -15,7 +17,7 @@
         "prettier": "prettier --write --ignore-unknown .",
         "prettier:check": "prettier --check --ignore-unknown .",
         "test": "npm run lint && npm run type-check && npm run prettier:check",
-        "type-check": "tsc -p ./renderer/tsconfig.json && tsc -p ./electron-src/tsconfig.json"
+        "type-check": "tsc"
     },
     "git": {
         "pre-commit": "lint-staged"
@@ -35,7 +37,7 @@
         "@types/react-dom": "18.0.0",
         "@vercel/git-hooks": "1.0.0",
         "electron": "18.0.3",
-        "electron-builder": "22.14.13",
+        "electron-builder": "23.0.3",
         "eslint": "8.7.0",
         "eslint-config-get-off-my-lawn": "7.0.4",
         "lint-staged": "12.3.7",
