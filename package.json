@@ -26,8 +26,10 @@
         "*": "prettier --write --ignore-unknown"
     },
     "dependencies": {
+        "electron": "18.0.3",
         "electron-is-dev": "2.0.0",
         "electron-next": "3.1.5",
+        "next": "12.1.4",
         "react": "18.0.0",
         "react-dom": "18.0.0"
     },
@@ -36,12 +38,10 @@
         "@types/react": "18.0.0",
         "@types/react-dom": "18.0.0",
         "@vercel/git-hooks": "1.0.0",
-        "electron": "18.0.3",
         "electron-builder": "23.0.3",
         "eslint": "8.7.0",
         "eslint-config-get-off-my-lawn": "7.0.4",
         "lint-staged": "12.3.7",
-        "next": "12.1.4",
         "npm-check": "5.9.2",
         "prettier": "2.6.2",
         "prettier-config-get-off-my-lawn": "1.0.0",
