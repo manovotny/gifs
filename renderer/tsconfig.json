@@ -1,6 +1,5 @@
 {
     "compilerOptions": {
-        "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "incremental": true,
         "isolatedModules": true,

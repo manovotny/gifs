@@ -2,7 +2,8 @@
     "compilerOptions": {
         "allowJs": true,
         "allowUnreachableCode": false,
-        "allowUnusedLabels": false
+        "allowUnusedLabels": false,
+        "esModuleInterop": true
     },
     "exclude": ["node_modules"]
 }
