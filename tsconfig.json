@@ -1,25 +1,7 @@
 {
     "compilerOptions": {
-        "allowJs": true,
-        "alwaysStrict": true,
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "incremental": true,
-        "isolatedModules": true,
-        "jsx": "preserve",
-        "lib": ["dom", "dom.iterable", "esnext"],
-        "module": "esnext",
-        "moduleResolution": "node",
-        "noEmit": false,
-        "noFallthroughCasesInSwitch": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
-        "resolveJsonModule": true,
-        "skipLibCheck": true,
-        "strict": true,
-        "target": "esnext",
-        "outDir": "../main"
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false
     },
-    "exclude": ["node_modules"],
-    "include": ["next-env.d.ts", "**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"]
+    "exclude": ["node_modules"]
 }

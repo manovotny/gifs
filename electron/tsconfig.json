@@ -19,6 +19,6 @@
         "target": "esnext",
         "outDir": "../main"
     },
-    "exclude": ["node_modules"],
-    "include": ["**/*.ts", "**/*.tsx", "**/*.js"]
+    "extends": "../tsconfig.json",
+    "include": ["**/*.js", "**/*.d.ts", "**/*.ts", "**/*.tsx"]
 }
