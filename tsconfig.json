@@ -10,6 +10,7 @@
         "jsx": "preserve",
         "moduleResolution": "node",
         "noFallthroughCasesInSwitch": true,
+        "noImplicitOverride": true,
         "resolveJsonModule": true,
         "skipLibCheck": true,
         "strict": true
