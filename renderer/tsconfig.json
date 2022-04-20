@@ -1,7 +1,6 @@
 {
     "compilerOptions": {
         "incremental": true,
-        "jsx": "preserve",
         "lib": ["dom", "dom.iterable", "esnext"],
         "module": "esnext",
         "moduleResolution": "node",
