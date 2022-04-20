@@ -9,6 +9,7 @@
         "isolatedModules": true,
         "jsx": "preserve",
         "moduleResolution": "node",
+        "noFallthroughCasesInSwitch": true,
         "resolveJsonModule": true,
         "skipLibCheck": true,
         "strict": true
