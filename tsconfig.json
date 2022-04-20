@@ -3,6 +3,7 @@
         "allowJs": true,
         "allowUnreachableCode": false,
         "allowUnusedLabels": false,
+        "alwaysStrict": true,
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "isolatedModules": true,

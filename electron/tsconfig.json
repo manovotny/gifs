@@ -1,6 +1,5 @@
 {
     "compilerOptions": {
-        "alwaysStrict": true,
         "lib": ["dom", "es2017"],
         "module": "commonjs",
         "noEmit": false,
