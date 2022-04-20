@@ -1,4 +1,4 @@
-import type {IpcRenderer} from 'electron';
+import type {IpcRenderer, IpcRendererEvent} from 'electron';
 
 import type {EffectCallback, ReactElement} from 'react';
 import {useEffect} from 'react';
@@ -17,7 +17,7 @@ const onSayHiClick = (): void => {
 
 const IndexPage = (): ReactElement => {
     useEffect((): ReturnType<EffectCallback> => {
-        const onMessage = (_event, args): void => {
+        const onMessage = (event: IpcRendererEvent, args: string): void => {
             // eslint-disable-next-line no-alert
             alert(args);
         };
