@@ -12,6 +12,7 @@
         "noFallthroughCasesInSwitch": true,
         "noImplicitOverride": true,
         "noImplicitReturns": true,
+        "noUncheckedIndexedAccess": true,
         "resolveJsonModule": true,
         "skipLibCheck": true,
         "strict": true
