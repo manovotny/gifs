@@ -1,7 +1,6 @@
 {
     "compilerOptions": {
         "alwaysStrict": true,
-        "isolatedModules": true,
         "jsx": "preserve",
         "lib": ["dom", "es2017"],
         "module": "commonjs",
