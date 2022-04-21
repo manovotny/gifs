@@ -3,6 +3,7 @@
         "allowJs": true,
         "allowUnreachableCode": false,
         "allowUnusedLabels": false,
+        "checkJs": true,
         "esModuleInterop": true,
         "exactOptionalPropertyTypes": true,
         "forceConsistentCasingInFileNames": true,
@@ -21,5 +22,5 @@
         "skipLibCheck": true,
         "strict": true
     },
-    "exclude": ["node_modules"]
+    "exclude": ["dist", "main", "node_modules", "renderer/.next", "renderer/out"]
 }
