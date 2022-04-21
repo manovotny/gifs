@@ -21,7 +21,8 @@
         "removeComments": true,
         "resolveJsonModule": true,
         "skipLibCheck": true,
-        "strict": true
+        "strict": true,
+        "target": "esnext"
     },
     "exclude": ["dist", "main", "node_modules", "renderer/.next", "renderer/out"]
 }

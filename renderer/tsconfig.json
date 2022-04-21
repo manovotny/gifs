@@ -1,8 +1,7 @@
 {
     "compilerOptions": {
         "incremental": true,
-        "module": "esnext",
-        "target": "es5"
+        "module": "esnext"
     },
     "extends": "../tsconfig.json",
     "include": ["**/*.js", "**/*.d.ts", "**/*.ts", "**/*.tsx"]

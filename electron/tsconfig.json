@@ -2,7 +2,6 @@
     "compilerOptions": {
         "module": "commonjs",
         "noEmit": false,
-        "target": "esnext",
         "outDir": "../main"
     },
     "extends": "../tsconfig.json",
