@@ -17,7 +17,7 @@ const onSayHiClick = (): void => {
 
 const IndexPage = (): ReactElement => {
     useEffect((): ReturnType<EffectCallback> => {
-        const onMessage = (event: IpcRendererEvent, args: string): void => {
+        const onMessage = (_event: IpcRendererEvent, args: string): void => {
             // eslint-disable-next-line no-alert
             alert(args);
         };
